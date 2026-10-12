@@ -25,10 +25,10 @@ app=FastAPI()
 app.add_middleware(
     CORSMiddleware,
     allow_origins=[
-        "http://localhost:5500",
-        "http://127.0.0.1:5500",
-        "https://YOUR-FRONTEND-NAME.onrender.com",
-    ],
+    "http://localhost:5500",
+    "http://127.0.0.1:5500",
+    "https://hiremeai-1.onrender.com",
+],
     allow_methods=["POST", "OPTIONS"],
     allow_headers=["Content-Type"],
 )
