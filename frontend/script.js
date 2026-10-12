@@ -1,5 +1,4 @@
-// Keep this local URL for testing. Replace it with your deployed backend URL before publishing the frontend.
-const API_URL = "http://127.0.0.1:8000";
+const API_URL = "https://hiremeai-ex5m.onrender.com/chat";
 const chatForm = document.getElementById("chatForm");
 const questionInput = document.getElementById("questionInput");
 const chatMessages = document.getElementById("chatMessages");
