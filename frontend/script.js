@@ -51,7 +51,7 @@ async function askQuestion(question) {
 
   try {
     // Matches the POST /chat endpoint in your FastAPI main.py.
-    const response = await fetch(`${API_URL}/chat`, {
+    const response = await fetch(API_URL, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
