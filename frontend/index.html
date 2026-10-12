@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#080a0b" />
+    <meta name="description" content="Explore Shreyash's professional experience, projects, skills and education with HireMeAI, a personal resume-aware interview assistant." />
+    <title>HireMeAI — Meet my resume. Know my story.</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <main class="page">
+      <header class="topbar">
+        <a class="brand" href="#top" aria-label="HireMeAI home">
+          <span class="brand-icon" aria-hidden="true"><span></span><span></span><span></span></span>
+          <span class="brand-word">HireMe<span class="brand-ai">AI</span><small>PERSONAL INTERVIEW ASSISTANT</small></span>
+        </a>
+        <div class="topbar-right">
+          <div class="topbar-status"><span class="status-dot"></span><span>RESUME LOADED</span></div>
+          <span class="built-for">BUILT FOR RECRUITERS</span>
+          <span class="ready-pill">INTERVIEW READY</span>
+        </div>
+      </header>
+
+      <section class="hero" id="top" aria-labelledby="hero-title">
+        <div class="hero-main">
+          <div class="intro-kicker"><span class="kicker-line"></span> YOUR PERSONAL INTERVIEW ASSISTANT</div>
+          <h1 id="hero-title">Meet my resume.<br /><span>Know my story.</span></h1>
+          <p class="hero-description">Ask questions about my experience, projects, skills, and education. HireMeAI answers using the information in my resume, so you can understand my background before our conversation.</p>
+
+          <div class="profile-highlights" aria-label="Resume categories">
+            <article class="highlight-card">
+              <span class="highlight-icon" aria-hidden="true">▣</span>
+              <div><strong>Experience</strong><span>Internships, roles and impact</span></div>
+            </article>
+            <article class="highlight-card">
+              <span class="highlight-icon code-icon" aria-hidden="true">&lt;/&gt;</span>
+              <div><strong>Projects</strong><span>Technical and academic work</span></div>
+            </article>
+            <article class="highlight-card">
+              <span class="highlight-icon cap-icon" aria-hidden="true">◇</span>
+              <div><strong>Education</strong><span>Studies and achievements</span></div>
+            </article>
+            <article class="highlight-card">
+              <span class="highlight-icon bars-icon" aria-hidden="true">▮▮▮</span>
+              <div><strong>Skills</strong><span>Technical and soft skills</span></div>
+            </article>
+          </div>
+        </div>
+
+        <aside class="football-note" aria-label="Personal inspiration">
+          <div class="quote-mark">“</div>
+          <blockquote>Talent without<br />working hard<br />is nothing.</blockquote>
+          <div class="quote-rule"></div>
+          <p class="quote-credit">— CRISTIANO RONALDO</p>
+          <div class="number-seven" aria-hidden="true">7</div>
+          <p class="football-values">DISCIPLINE<br />FOCUS<br />CONSISTENCY<br />GROWTH</p>
+        </aside>
+      </section>
+
+      <section class="chat-card" aria-label="Ask questions about my resume">
+        <div class="chat-header">
+          <div class="bot-avatar" aria-hidden="true"><span class="avatar-star">✦</span><span class="avatar-letter">H</span></div>
+          <div class="bot-details"><strong>HireMeAI <span class="online-dot"></span></strong><span>Your resume-aware AI assistant</span></div>
+          <div class="chat-header-right">ASK. EXPLORE. KNOW MY STORY.</div>
+        </div>
+
+        <div class="chat-content" id="chatMessages" aria-live="polite">
+          <div class="welcome-block">
+            <div class="welcome-icon">✦</div>
+            <div class="message-meta">HIREMEAI <span>· READY</span></div>
+            <p>Welcome. I'm here to help you explore my professional background. Ask about the experience, projects, skills, and education listed in my resume.</p>
+          </div>
+          <div class="suggestion-heading">TRY ASKING</div>
+          <div class="suggestions">
+            <button type="button" class="suggestion" data-question="Tell me about yourself.">Tell me about yourself <span>›</span></button>
+            <button type="button" class="suggestion" data-question="Can you explain your experience and internships?">Experience &amp; internships <span>›</span></button>
+            <button type="button" class="suggestion" data-question="What technical skills are listed in my resume?">Skills &amp; technologies <span>›</span></button>
+            <button type="button" class="suggestion" data-question="What projects have I worked on?">Projects <span>›</span></button>
+            <button type="button" class="suggestion" data-question="Tell me about my education.">Education <span>›</span></button>
+          </div>
+        </div>
+
+        <form class="composer" id="chatForm">
+          <label class="sr-only" for="questionInput">Ask a question about my resume</label>
+          <textarea id="questionInput" rows="1" placeholder="Ask a question about my resume..." required></textarea>
+          <button class="send-button" id="sendButton" type="submit" aria-label="Send message"><span>Send</span><span class="send-arrow" aria-hidden="true">➤</span></button>
+        </form>
+        <div class="chat-footer">
+          <span><span class="lock-icon">◈</span> Answers are grounded in the information configured in my resume.</span>
+          <span>ENTER TO SEND · SHIFT + ENTER FOR NEW LINE</span>
+        </div>
+      </section>
+
+      <footer class="footer">
+        <span>© 2026 HIREMEAI <i></i> My Resume. My Journey. My Next Chapter.</span>
+        <span class="footer-signoff">BUILT WITH <b>♥</b> FOR NEW OPPORTUNITIES</span>
+      </footer>
+    </main>
+    <script src="./script.js"></script>
+  </body>
+</html>
